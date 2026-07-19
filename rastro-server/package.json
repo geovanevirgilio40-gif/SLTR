@@ -1,0 +1,27 @@
+{
+  "name": "rastro-server",
+  "version": "4.0.0",
+  "description": "Backend real multi-tenant de localizacao em tempo real, pensado para correr inteiramente no Railway (Postgres + Redis opcional)",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node --watch server.js"
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "pg": "^8.13.0",
+    "pino": "^9.4.0",
+    "redis": "^4.7.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.2.2"
+  }
+}
